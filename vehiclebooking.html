@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <title>DGL Holidays - Vehicle Booking</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/logo/favicon.ico">
+    <link rel="stylesheet" href="./assets/packages/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/packages/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="my-primary pt-1 pb-1">
+            <div class="container">
+                <div class="topbar row d-lg-flex d-md-flex d-block text-white">
+                    <div class="contact col-lg-7 col-md-6 text-md-start text-center">
+                        <div class="h-100 d-inline-flex align-items-center px-1">
+                            <small class="fa fa-phone me-1"></small>
+                            <small>+91 9360001248</small>
+
+
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center px-1">
+                            <small class="fa fa-envelope me-1"></small>
+                            <small data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                                style="cursor: pointer;">mail@dglholidays.com</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 text-center text-md-end">
+                        <div class="h-100 d-inline-flex align-items-center">
+                            <a class="btn btn-square me-1" href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="btn btn-square me-1" href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a class="btn btn-square me-1" href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-light border">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html"><img src="./assets/image/logo/Logo--DGL-Holidays.png" class="" height="60px" alt=""> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-align-center"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="we.html">We</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pondicherry
+                            </a>
+                            <ul class="dropdown-menu animate slideIn">
+                                <li><a class="dropdown-item" href="tourpackages.html">Tour Packages</a></li>
+                                <li><a class="dropdown-item" href="hotelbooking.html">Hotel Booking</a></li>
+                                <li><a class="dropdown-item" href="vehiclebooking.html">Vehicle Booking</a></li>
+                                <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contactus.html">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active btn my-primary text-white p-2 m-2" href="enquirenow.html">Enquire Now</a>
+                        </li>
+
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main style="margin-top: 120px;">
+        <section class="about-main d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center text-white">Vehicle Booking</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                              <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                              <li class="breadcrumb-item text-white active" aria-current="page">Vehicle Booking</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+         <!--   <div class="text-center down-toggle" id="down-toggle"><div id="triangle-up"></div></div> -->
+        </section>
+
+        <section class="view-sec feature1 d-flex justify-content-center Services" id="vehiclebooking">
+            <div class="container text-center ">
+                <p class="my-primary-color" style="font-size:28px"><i class="fa-solid fa-car-side"></i></p>
+                <h2 >Vehicle Booking</h2>
+                <div class="row pt-3 d-flex align-items-center justify-content-center">
+
+                    <!--tab navs-->
+                    <div class="col-md-12 col-lg-2 mb-3">
+                        <div class="nav flex-column border nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active border-bottom" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sedan" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Sedan</button>
+                            <button class="nav-link border-bottom" id="v-pills-suv-tab" data-bs-toggle="pill" data-bs-target="#v-pills-suv" type="button" role="tab" aria-controls="v-pills-suv" aria-selected="false">SUV</button>
+                            <button class="nav-link border-bottom" id="v-pills-travaller-tab" data-bs-toggle="pill" data-bs-target="#v-pills-travaller" type="button" role="tab" aria-controls="v-pills-travaller" aria-selected="false">Travaller</button>
+                            <button class="nav-link " id="v-pills-bus-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bus" type="button" role="tab" aria-controls="v-pills-bus" aria-selected="false">Bus</button>
+                        </div>
+                    </div>
+
+                    <!--tab body-->
+                    <div class="col-md-12 col-lg-8 mb-3">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active me-2" id="v-pills-sedan" role="tabpanel" aria-labelledby="v-pills-sedan-tab" tabindex="0">
+                                <img class="img-fluid" src="https://imgd.aeplcdn.com/600x337/n/cw/ec/41197/hyundai-verna-right-front-three-quarter7.jpeg?q=75" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-suv" role="tabpanel" aria-labelledby="v-pills-suv-tab" tabindex="0">
+                                <img class="img-fluid" src="https://imgd.aeplcdn.com/600x337/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter.jpeg?isig=0&q=75" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-travaller" role="tabpanel" aria-labelledby="v-pills-travaller-tab" tabindex="0">
+                                <img class="img-fluid" src="https://5.imimg.com/data5/MM/GV/VF/GLADMIN-3061/force-traveller-26-staff-bus-optional-ac.jpg" width="56.4%" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-bus" role="tabpanel" aria-labelledby="v-pills-bus-tab" tabindex="0">
+                                <img class="img-fluid" src="https://media.istockphoto.com/photos/white-passenger-bus-picture-id135327019?k=20&m=135327019&s=612x612&w=0&h=YJneXYFReSVuKSIFOy5wGIygeLeb1UquX4BWLk-MluI=" width="59.4%" alt="">
+                            </div>
+                        </div>
+                        <a class="btn btn-outline-warning mb-2" href="#enquiry-now">Enquire Now</a>
+                    </div>
+
+              <!--      <div class="col-md-12 col-lg-2">
+                        <a class="btn btn-outline-warning mb-2" href="#enquiry-now">Enquire Now</a>
+                    </div> -->
+
+
+                </div>
+            </div>
+         <!--   <div class="text-center down-toggle" id="down-toggle1"><div id="triangle-up1"></div></div> -->
+        </section>
+      
+        <section class="view-sec my-primary" id="enquiry-now" style="scroll-margin-top:90px">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-6  mb-4">
+                        <form action="" id="enquiry-form" onsubmit="return false" class="row bg-white mx-lg-5 mx-md-1 mx-sm-0 p-4 rounded">
+                            <h2 class="text-center mb-4">Book Your Packages</h2>    
+                            <div class="col-md-12 mb-2">
+                                <label for="validationCustom01" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <label for="validationCustom01" class="form-label">City of Residnce</label>
+                                <input type="text" class="form-control" id="city-of-residnce" name="city-of-residnce" required>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <label for="validationCustom01" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <label for="validationCustom01" class="form-label">Phone Number</label>
+                                <input class="form-control" type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="col-md-12 mb-1">
+                                <label for="validationCustom01" class="form-label">Travel Destination</label>
+                                <input class="form-control" type="tel" id="destination" name="destination" required>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="validationCustom01" class="form-label">From Date</label>
+                                        <input class="form-control" type="date" id="from-date" name="from-date" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom01" class="form-label">To Date</label>
+                                        <input class="form-control" type="date" id="to-date" name="to-date" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <label for="validationCustom01" class="form-label">No of People</label>
+                                <input class="form-control" type="number" id="number-people" name="number-people" required>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <label for="validationCustom01" class="form-label">Vaction Type</label>
+                                <select class="form-select" aria-label="Default select example" id="type" name="type" required>
+                                    <option selected disabled>Select</option>
+                                    <option value="Honeymoon">Honeymoon</option>
+                                    <option value="Friends Trip">Friends Trip</option>
+                                    <option value="Family Trip">Family Trip</option>
+                                    <option value="Corporate">Corporate</option>
+                                  </select>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <button type="submit" class="form-control btn btn-primary my-primary mx-auto mt-2"> ENQUIRE NOW</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 text-center text-white" id="enquiry">
+                        <h3>Stay Connected</h3>
+                        <p><i class="fa-solid fa-phone my-primary-color bg-white p-3 rounded-circle"></i></p>
+                        <p>+919360001248</p>
+                        <hr class="mb-2">
+                        <p><i class="fa-solid fa-envelope my-primary-color bg-white p-3 rounded-circle"></i></p>
+                        <p>mail@dglholidays.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="g-map">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Pondicherry&t=&z=13&ie=UTF8&iwloc=&output=embed&z=18"
+                            frameborder="0" style="border:0" allowfullscreen width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+        <!--model-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+    
+                    <div class="modal-body">
+    
+    
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4 offset-md-4">
+                                    <div class="card card-ele bg-primary my-primary text-white border
+                                                border-primary">
+                                        <h5 class="card-title text-center p-3 mt-1"><i
+                                                class="fa-solid fa-person-walking-luggage"></i> Get Customized
+                                            Quotes
+    
+    
+                                        </h5>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="staticEmail2" class="form-label">From</label>
+                                    <input type="date" class="form-control" id="staticEmail2">
+                                </div>
+    
+                                <div class="col-md-3">
+                                    <label for="inputPassword2" class="form-label">No. of Days</label>
+                                    <input type="number" class="form-control" id="inputPassword2" placeholder="No. of Days">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputPassword2" class="form-label">Price per pax</label>
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Price per pax">
+                                </div>
+                                <div class="col-md-2">
+    
+                                    <label for="inputPassword2" class="form-label"></label>
+                                    <button type="submit" class="form-control btn btn-primary my-primary mx-auto mt-2"><i
+                                            class="fa-regular fa-circle-check"></i> Submit</button>
+                                </div>
+                                <div class="col-md-2">
+    
+                                    <label for="inputPassword2" class="form-label"></label>
+                                    <button type="button" class="form-control btn btn-danger mx-auto mt-2"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted">
+
+        <section class="footer-body footer-start">
+            <div class="container text-center text-md-start  footer-bottom my-primary text-white">
+                <!-- Grid row -->
+                <div class="row pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i> DGL Holidays
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Quick Links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">
+                                Gallery</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">
+                                Special Tour </a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4"> Branch Office Address</h6>
+
+                        10, 1st Floor,<br>
+                        Balaji Nagar, Anna salai,<br>
+                        Karaimedu, Gangarampalayam,<br>
+                        Villupuram District,<br>
+                        Tamil Nadu - 605108
+
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Corporate Office Address</h6>
+
+                        3/1449, Perumal Koil Street,<br>
+                        Vazhudareddy, Villupuram,<br>
+                        Tamil Nadu - 605 401
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 bg-light">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="#">DGL Holidays
+            </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="./assets/packages/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/packages/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/packages/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script type="module">
+        import * as http from './assets/JS/http.js';
+
+        var formnew = document.getElementById('enquiry-form');
+        
+       formnew.addEventListener('submit', (e) => {
+
+            var name = document.getElementById('name').value
+            var city_of_residnce = document.getElementById('city-of-residnce').value
+            var email = document.getElementById('email').value
+            var phone = document.getElementById('phone').value
+            var destination = document.getElementById('destination').value
+            var from_date = document.getElementById('from-date').value
+            var to_date = document.getElementById('to-date').value
+            var number_people = document.getElementById('number-people').value
+            var type = document.getElementById('type').value
+
+            var formdata = new FormData();
+            formdata.append("name", name)
+            formdata.append("city_of_residnce", city_of_residnce)
+            formdata.append("email", email)
+            formdata.append("phone", phone)
+            formdata.append("destination", destination)
+            formdata.append("from_date", from_date)
+            formdata.append("to_date", to_date)
+            formdata.append("number_people", number_people)
+            formdata.append("type", type)
+
+            http.create('enquirenow.php',formdata).then(data =>{
+            })
+
+        })
+        
+    </script>
+</body>
+
+</html>
